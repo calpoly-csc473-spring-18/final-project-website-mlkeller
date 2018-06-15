@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<!--
+	Theory by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Theory by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Banner -->
+			<section id="banner">
+				<h1>Soft Shadows</h1>
+				<p>By Mitchell Keller</p>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper">
+				<div class="inner">
+					<div>
+						<article>
+							<header>
+								<h3>Project Description</h3>
+							</header>
+							<p>This ray tracer features soft shadows. For soft shadows, the lights can't be points because each object hit needs to sample a large amount of points on the light in order to create this soft shadow effect. Each point uses N samples and casts rays to those samples to determine if the light is obstructed or not. The radius of the light also effects how large the shadow will extend to. </p>
+						</article>
+						<article>
+							<header>
+								<h3>Usage</h3>
+							</header>
+							<p>Use the flag "-N=" followed by the number of samples desired.</p>
+							<p>Use the flag "-radius=" followed by the radius for all lights desired.</p>
+						</article>
+						<article>
+							<header>
+								<h3>Images</h3>
+							</header>
+							<p>Radius 1.0</p>
+							<p><img src="Images/output1.png" > </p>
+							<p>Radius 8.0</p>
+							<p><img src="Images/output8.png" > </p>
+							<p>Radius 16.0</p>
+							<p><img src="Images/output16.png" > </p>
+							<p>Radius 32.0</p>
+							<p><img src="Images/output32.png" > </p>
+							<p><img src="Images/pyramid.png" > </p>
+						</article>
+
+						<article> 
+							<header>
+								<h3>References</h3>
+								<ul>
+									<li> <a href="https://books.google.com.mt/books?id=nC3OBQAAQBAJ&pg=PA312&lpg=PA312&dq=jittered+2d+points+and+store+in+an+array&source=bl&ots=EYDG00v78l&sig=bIvhc9bgGZqBVAjU1srC8cEc6a4&hl=en&sa=X&ved=0ahUKEwj95P3wvNXbAhWJvxQKHYWEBdEQ6AEIKDAA#v=onepage&q=jittered%202d%20points%20and%20store%20in%20an%20array&f=false"> Information on Soft Shadows</a> </li>
+								</ul>
+							</header>
+						</article>
+
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex">
+						<div class="copyright">
+							&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{E927D25E-B1E0-4D6B-A402-3C4ADB5406FF}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup>
+    <IncludePath>$(SolutionDir)\ext;$(SolutionDir)\lib;$(SolutionDir)\src;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="lib\parser\Parser.cpp" />
+    <ClCompile Include="lib\parser\Tokenizer.cpp" />
+    <ClCompile Include="lib\parser\TokenStream.cpp" />
+    <ClCompile Include="src\Application\Application.cpp" />
+    <ClCompile Include="src\Application\main.cpp" />
+    <ClCompile Include="src\Application\RayInfo.cpp" />
+    <ClCompile Include="src\Application\Renderer.cpp" />
+    <ClCompile Include="src\Application\SceneInfo.cpp" />
+    <ClCompile Include="src\Objects\Box.cpp" />
+    <ClCompile Include="src\Objects\Plane.cpp" />
+    <ClCompile Include="src\Objects\Sphere.cpp" />
+    <ClCompile Include="src\Objects\Triangle.cpp" />
+    <ClCompile Include="src\RayTracer\Pixel.cpp" />
+    <ClCompile Include="src\RayTracer\RayTracer.cpp" />
+    <ClCompile Include="src\RayTracer\Util.cpp" />
+    <ClCompile Include="src\Scene\AABB.cpp" />
+    <ClCompile Include="src\Scene\BoundingVolumeNode.cpp" />
+    <ClCompile Include="src\Scene\Camera.cpp" />
+    <ClCompile Include="src\Scene\Object.cpp" />
+    <ClCompile Include="src\Scene\Scene.cpp" />
+    <ClCompile Include="src\Shading\BlinnPhongBRDF.cpp" />
+    <ClCompile Include="src\Shading\CookTorranceBRDF.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib\parser\Objects.hpp" />
+    <ClInclude Include="lib\parser\parse_error.hpp" />
+    <ClInclude Include="lib\parser\Parser.hpp" />
+    <ClInclude Include="lib\parser\Tokenizer.hpp" />
+    <ClInclude Include="lib\parser\TokenStream.hpp" />
+    <ClInclude Include="src\Application\Application.hpp" />
+    <ClInclude Include="src\Application\RayInfo.hpp" />
+    <ClInclude Include="src\Application\Renderer.hpp" />
+    <ClInclude Include="src\Application\SceneInfo.hpp" />
+    <ClInclude Include="src\Objects\Box.hpp" />
+    <ClInclude Include="src\Objects\Plane.hpp" />
+    <ClInclude Include="src\Objects\Sphere.hpp" />
+    <ClInclude Include="src\Objects\Triangle.hpp" />
+    <ClInclude Include="src\RayTracer\Params.hpp" />
+    <ClInclude Include="src\RayTracer\Pixel.hpp" />
+    <ClInclude Include="src\RayTracer\PixelContext.hpp" />
+    <ClInclude Include="src\RayTracer\Ray.hpp" />
+    <ClInclude Include="src\RayTracer\RayTracer.hpp" />
+    <ClInclude Include="src\RayTracer\RayTraceResults.hpp" />
+    <ClInclude Include="src\RayTracer\Util.hpp" />
+    <ClInclude Include="src\Scene\AABB.hpp" />
+    <ClInclude Include="src\Scene\BoundingVolumeNode.hpp" />
+    <ClInclude Include="src\Scene\Camera.hpp" />
+    <ClInclude Include="src\Scene\Light.hpp" />
+    <ClInclude Include="src\Scene\Object.hpp" />
+    <ClInclude Include="src\Scene\Scene.hpp" />
+    <ClInclude Include="src\Shading\BlinnPhongBRDF.hpp" />
+    <ClInclude Include="src\Shading\BRDF.hpp" />
+    <ClInclude Include="src\Shading\CookTorranceBRDF.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

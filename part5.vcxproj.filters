@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Shading">
+      <UniqueIdentifier>{6c293007-0034-4f48-9acd-56406be97bf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{a4220cc3-5d35-4738-85e6-e528e0ed0b6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RayTracer">
+      <UniqueIdentifier>{618306f0-fa3c-437f-b9c2-5f91c164e741}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{af57eab2-bec6-4afe-bdc7-9063ab2f2b9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser">
+      <UniqueIdentifier>{e34bf9ac-b922-4adc-9bda-e144f3e6f702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{40a781af-9e9d-4286-93ff-7987b74096bc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lib\parser\Parser.cpp">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\parser\Tokenizer.cpp">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\parser\TokenStream.cpp">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Application\main.cpp" />
+    <ClCompile Include="src\Application\Application.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shading\BlinnPhongBRDF.cpp">
+      <Filter>Shading</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shading\CookTorranceBRDF.cpp">
+      <Filter>Shading</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Camera.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RayTracer\Pixel.cpp">
+      <Filter>RayTracer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Application\RayInfo.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Application\SceneInfo.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RayTracer\Util.cpp">
+      <Filter>RayTracer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RayTracer\RayTracer.cpp">
+      <Filter>RayTracer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Application\Renderer.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Scene.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\Plane.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\Sphere.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\Triangle.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\Object.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Objects\Box.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\AABB.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene\BoundingVolumeNode.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib\parser\Objects.hpp">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\parser\parse_error.hpp">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\parser\Parser.hpp">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\parser\Tokenizer.hpp">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\parser\TokenStream.hpp">
+      <Filter>Parser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Application\Application.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shading\BlinnPhongBRDF.hpp">
+      <Filter>Shading</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shading\BRDF.hpp">
+      <Filter>Shading</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Shading\CookTorranceBRDF.hpp">
+      <Filter>Shading</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Light.hpp">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Camera.hpp">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RayTracer\Params.hpp">
+      <Filter>RayTracer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RayTracer\Pixel.hpp">
+      <Filter>RayTracer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RayTracer\PixelContext.hpp">
+      <Filter>RayTracer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RayTracer\Ray.hpp">
+      <Filter>RayTracer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Application\RayInfo.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Application\SceneInfo.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RayTracer\Util.hpp">
+      <Filter>RayTracer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RayTracer\RayTracer.hpp">
+      <Filter>RayTracer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RayTracer\RayTraceResults.hpp">
+      <Filter>RayTracer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Application\Renderer.hpp">
+      <Filter>Application</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Scene.hpp">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Plane.hpp">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Sphere.hpp">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Triangle.hpp">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\Object.hpp">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Objects\Box.hpp">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\AABB.hpp">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene\BoundingVolumeNode.hpp">
+      <Filter>Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
