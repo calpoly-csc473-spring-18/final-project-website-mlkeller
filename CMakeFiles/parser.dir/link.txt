@@ -1,2 +1,0 @@
-/bin/ar cr libparser.a  CMakeFiles/parser.dir/lib/parser/Parser.cpp.o CMakeFiles/parser.dir/lib/parser/Tokenizer.cpp.o CMakeFiles/parser.dir/lib/parser/TokenStream.cpp.o
-/bin/ranlib libparser.a

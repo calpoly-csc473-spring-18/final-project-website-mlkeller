@@ -1,2 +1,0 @@
-/home/mlkeller/cpe473/part5/build/CMakeFiles/parser.dir
-/home/mlkeller/cpe473/part5/build/CMakeFiles/raytrace.dir
